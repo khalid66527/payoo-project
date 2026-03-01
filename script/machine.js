@@ -26,6 +26,7 @@ function showOnly(id){
     const cashout = document.getElementById("Cashout")
     const transfer = document.getElementById("Transfer")
     const payBil = document.getElementById("pay-bill")
+    const transacrions = document.getElementById("history")
 
     // hide all id
 
@@ -33,6 +34,8 @@ function showOnly(id){
     cashout.classList.add("hidden");
     transfer.classList.add("hidden");
     payBil.classList.add("hidden");
+    transacrions.classList.add("hidden");
+
 
     // onclick remove the id
 

@@ -80,7 +80,7 @@
             <img src="./assets/opt-5.png" alt="">
             <p>Pay Bill</p>
         </button>
-        <button onclick="showOnly('')" class="btn flex-col h-full py-3 btn-soft">
+        <button  onclick="showOnly('history')"  onclick="showOnly('')" class="btn flex-col h-full py-3 btn-soft">
             <img src="./assets/opt-6.png" alt="">
             <p>Transactions</p>
         </button>
@@ -208,6 +208,16 @@
           </div>
       </div>
     </section>
+
+    <!-- history section -->
+     <section id="history" class="w-11/12 mx-auto py-5">
+      <h2 class="text-xl font-bold mb-5">Transacrions</h2>
+      <div class=" space-y-5" id="history-container">
+        <div class="transaction-card p-5 bg-base-100">
+
+        </div>
+      </div>
+     </section>
 
 
     <script src="./script/machine.js"></script>
