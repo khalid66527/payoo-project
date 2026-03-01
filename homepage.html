@@ -60,27 +60,27 @@
       <p class="text-neutral/50 pb-4">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
 
       <div class="buttons grid grid-cols-3 gap-2">
-        <button class="btn flex-col h-full py-3 btn-soft">
+        <button onclick="showOnly('Add-Money')" class="btn flex-col h-full py-3 btn-soft">
             <img src="./assets/opt-1.png" alt="">
             <p>Add Money</p>
         </button>
-        <button class="btn flex-col h-full py-3 btn-soft">
+        <button onclick="showOnly('Cashout')" class="btn flex-col h-full py-3 btn-soft">
             <img src="./assets/opt-2.png" alt="">
             <p>Cashout</p>
         </button>
-        <button class="btn flex-col h-full py-3 btn-soft">
+        <button onclick="showOnly('Transfer')" class="btn flex-col h-full py-3 btn-soft">
             <img src="./assets/opt-3.png" alt="">
             <p>Transfer Money</p>
         </button>
-        <button class="btn flex-col h-full py-3 btn-soft">
+        <button onclick="showOnly('')" class="btn flex-col h-full py-3 btn-soft">
             <img src="./assets/opt-4.png" alt="">
             <p>Get Bonus</p>
         </button>
-        <button class="btn flex-col h-full py-3 btn-soft">
+        <button onclick="showOnly('pay-bill')" class="btn flex-col h-full py-3 btn-soft">
             <img src="./assets/opt-5.png" alt="">
             <p>Pay Bill</p>
         </button>
-        <button class="btn flex-col h-full py-3 btn-soft">
+        <button onclick="showOnly('')" class="btn flex-col h-full py-3 btn-soft">
             <img src="./assets/opt-6.png" alt="">
             <p>Transactions</p>
         </button>
@@ -89,7 +89,7 @@
     </section>
 
       <!-- Teansfer Money section -->
-    <section id="Transfer" class=" w-11/12 mx-auto py-5 ">
+    <section  id="Transfer" class=" w-11/12 mx-auto py-5 ">
       <h2 class="text-xl font-bold">Transfer Money</h2>
 
       <div class="form pt-10">
@@ -117,7 +117,7 @@
 
     <!-- pay Bill section -->
 
-    <section id="pay-bill" class=" w-11/12 mx-auto py-5 hidden">
+    <section id="pay-bill" class=" w-11/12 mx-auto py-5 ">
       <h2 class="text-xl font-bold">Pay Bill</h2>
       <div class="card bg-base-100 w-full  shadow rounded-2xl">
               <fieldset class="fieldset">
@@ -149,7 +149,7 @@
     </section>
     <!-- add money section -->
      
-    <section id="Add-Money" class=" w-11/12 mx-auto py-5 hidden">
+    <section id="Add-Money" class=" w-11/12 mx-auto py-5 ">
       <h2 class="text-xl font-bold">Add Money</h2>
       <div class="card bg-base-100 w-full  shadow rounded-2xl">
               <fieldset class="fieldset">
@@ -183,7 +183,7 @@
     <!-- cashout section  -->
 
 
-    <section id="Cashout" class=" w-11/12 mx-auto py-5 hidden">
+    <section id="Cashout" class=" w-11/12 mx-auto py-5 ">
       <h2 class="text-xl font-bold">Cashout</h2>
 
       <div class="form pt-10">
@@ -196,7 +196,7 @@
                 <br>
 
                 <label   class="label text-neutral font-bold">Amount</label>
-                <input id="cashout-amount"type="number" class="input rounded-full bg-base-200 w-full" value="01234567890" placeholder="Enter amount to withdraw" /> 
+                <input id="cashout-amount"type="number" class="input rounded-full bg-base-200 w-full"  placeholder="Enter amount to withdraw" /> 
 
                 <br>
 
@@ -208,6 +208,8 @@
           </div>
       </div>
     </section>
+
+
     <script src="./script/machine.js"></script>
     <script src="./script/transfer.js"></script>
     <script src="./script/pay-bill.js"></script>

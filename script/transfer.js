@@ -16,7 +16,8 @@ document.getElementById("transfer-btn").addEventListener("click", function(){
 
     const transferPin = getValueFromInput("transfer-pin")
     if (transferPin === "1234"){
-        alert("Transfer Success")
+        alert(`Transfer Success form 
+            ${transferNumber} at ${new Date()}`)
         setBalance(newBalance);
     }
     else{

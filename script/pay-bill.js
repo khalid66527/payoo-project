@@ -19,7 +19,8 @@ document.getElementById("pay-bill-btn").addEventListener("click", function(){
 
     const Pin = getValueFromInput("pay-bill-pin");
     if(Pin === "1234"){
-        alert('Pay Bill successfull')
+        alert(`Pay Bill success form
+            ${payAccount} at ${new Date()}`);
         setBalance(newBalance);
     }else{
         alert("invalite Pin")

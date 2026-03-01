@@ -22,7 +22,8 @@ document.getElementById("cashout-btn").addEventListener('click',function(){
 
     const Pin = getValueFromInput("cashout-pin");
     if(Pin === "1234"){
-        alert('cashout successfull')
+        alert(`cashout successfull
+            ${cashoutNumber} at ${new Date()}`)
         setBalance(newBalance);
     }else{
         alert("invalite Pin")
