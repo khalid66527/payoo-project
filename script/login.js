@@ -13,7 +13,7 @@ document.getElementById('btn-login')
             // step-3-1 true::>>  alert homepage
             alert('login Success')
             // window.location.replace('/homepage.html')
-            window.location.assign('/homepage.html')
+            window.location.assign('./homepage.html')
         }
         else{
             alert('login Failled');
