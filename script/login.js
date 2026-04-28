@@ -19,6 +19,5 @@ document.getElementById('btn-login')
             alert('login Failled');
             return;
         }
-        // step-3-2 true::>>  alert return
 
     })

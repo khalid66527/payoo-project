@@ -27,6 +27,7 @@ function showOnly(id){
     const transfer = document.getElementById("Transfer")
     const payBil = document.getElementById("pay-bill")
     const transacrions = document.getElementById("history")
+    const bonus = document.getElementById("bonus")
 
     // hide all id
 
@@ -35,11 +36,24 @@ function showOnly(id){
     transfer.classList.add("hidden");
     payBil.classList.add("hidden");
     transacrions.classList.add("hidden");
+    if(bonus) bonus.classList.add("hidden");
 
 
     // onclick remove the id
 
     const selected = document.getElementById(id);
     selected.classList.remove("hidden");
+
+    // handle active button styling
+    const buttons = document.querySelectorAll('.buttons button');
+    for (const btn of buttons) {
+        btn.classList.remove("active-btn");
+    }
+
+    const activeButton = document.querySelector(`.buttons button[onclick="showOnly('${id}')"]`);
+    if (activeButton) {
+        activeButton.classList.add("active-btn");
+    }
 }
+
 
